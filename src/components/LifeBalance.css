@@ -1,0 +1,113 @@
+
+body{
+    background-color: #19667A;
+    
+}
+.Lb-div1{
+    width: 100% ;
+    height: auto;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    
+}
+.back-btn{
+    border: 1px solid transparent;
+}
+.text-div{
+    border: 1px solid transparent;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.text-div h1 {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: bold;
+  color: #F6F6F6;
+}
+
+.text-div p {
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #D1D1D1;
+}
+
+.main-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.Lb-div2{
+     width: 100% ;
+    height: auto;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-div{
+    border: 1px solid transparent;
+    padding-bottom: 60px;
+    padding-top: 65px;
+     padding-left: 120px;
+      padding-right: 100px;
+    background-image: url(../assets/circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-div img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.back-btn{
+    display: flex;
+    width: 100%;
+}
+.back-btn a{
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+.animated-girl {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-girl img {
+  
+  width: 400px;
+  height: auto;
+  display: block;
+  animation: balanceRock 4s ease-in-out infinite alternate;
+  transform-origin: 50% 85%; 
+}
+
+@keyframes balanceRock {
+  0% { transform: rotate(-8deg); }
+  100% { transform: rotate(8deg); }
+}
+
+@media (max-width:1279px){
+    .main-sec{
+        flex-direction: column;
+        gap: 50px;
+    }
+}

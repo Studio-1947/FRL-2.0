@@ -1,0 +1,130 @@
+.nav-div {
+  background-color: #182225;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  padding-left: 10px;
+  min-height: clamp(70px, 10vh, 100px);
+}
+
+.links {
+  display: flex;
+  gap: clamp(1rem, 2vw, 2.5rem);
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-div img {
+  width: clamp(100px, 12vw, 160px);
+  height: auto;
+}
+
+#userIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hamburger Styles */
+.ham {
+  display: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-menu {
+  background: #182225;
+  width: 70vw;
+  max-width: 300px;
+  height: 100vh;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-overlay .mobile-menu {
+  transform: translateX(0);
+}
+
+.mobile-icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  margin-top: 1rem;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1032px) {
+  .links, .icon {
+    display: none;
+  }
+  
+  .ham {
+    display: block;
+  }
+}
+
+/* Ensure mobile menu shows when active */
+@media (max-width: 1032px) {
+  .links.active,
+  .icon.active {
+    display: none !important;
+  }
+}

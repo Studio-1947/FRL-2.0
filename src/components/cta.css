@@ -1,0 +1,17 @@
+
+.name,
+.name1 {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+
+  flex-shrink: 0;
+}
+
+.userIcon img,
+.userIcon1 img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
