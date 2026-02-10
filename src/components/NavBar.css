@@ -10,7 +10,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 99%;
   padding-left: 10px;
   min-height: clamp(70px, 10vh, 100px);
 }
