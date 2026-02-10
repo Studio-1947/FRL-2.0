@@ -1,0 +1,55 @@
+.countryzip {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+  padding: 8px;
+  background: transparent;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.countryzip select {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color:white;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 12px;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%230ea5e9' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 16px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.countryzip select:hover {
+  
+  background-color: transparent;
+  box-shadow: 0 2px 12px rgba(14, 165, 233, 0.2);
+}
+
+.countryzip select:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.3);
+  transform: translateY(-1px);
+}
+
+.countryzip select option {
+  padding: 12px;
+  background: transparent;
+  color: #1e293b;
+}
+
+.countryzip select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: rgba(248, 250, 252, 0.7);
+  border-color: #94a3b8;
+}
