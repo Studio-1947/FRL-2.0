@@ -219,6 +219,9 @@ body {
   .img-div {
     padding: clamp(12px, 4vw, 35px) clamp(15px, 6vw, 60px);
   }
+  .text-div{
+    margin-top: 0;
+  }
  
 }
 @media (min-width: 1222px) {
@@ -233,6 +236,9 @@ body {
   .img-div {
     width: 50%;
     padding: clamp(10px, 4vw, 25px) clamp(10px, 5vw, 40px);
+  }
+  .text-div{
+    margin-top: 50px;
   }
 }
 @media (max-width: 840px) {
@@ -272,8 +278,13 @@ body {
          
          
     }
-  
-  
+}
+@media (max-width: 375px){
+     .main-sec{
+         padding-top: 40px;
+         
+         
+    }
 }
 /* 🔥 Plasma Background - FIXED */
 .plasma-wrapper {
