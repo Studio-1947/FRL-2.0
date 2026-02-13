@@ -5,7 +5,6 @@ import PointTracker from "./PointTracker";
 
 function LifeBalance7() {
   const navigate = useNavigate();
-  
 
   const handleBack = () => navigate(-1);
   const handleExploreNow = () => navigate("/lifebalance8");
@@ -48,14 +47,15 @@ function LifeBalance7() {
 
               <div className="text-div">
                 <h1>
-                 How Satisfied Are You <br /> With Romance In your <br /> Life Right Now?
+                  How Satisfied Are You <br /> With Romance In your <br /> Life
+                  Right Now?
                 </h1>
                 <p>Rate your level of satisfaction from 0.00 to 1.00</p>
 
                 <div
                   style={{ margin: "2rem 0", width: "100%", maxWidth: "420px" }}
                 >
-                  <PointTracker/>
+                  <PointTracker />
                 </div>
 
                 <div className="ctacontent">
