@@ -1,16 +1,20 @@
 import "./LifeBalance3.css";
 import DarkVeil from "./DarkVeil";
 import { useNavigate } from "react-router-dom";
+import { useRef } from 'react';
 
 function LifeBalance3() {
+  const countryRef = useRef<HTMLSelectElement>(null);
   const navigate = useNavigate();
 
   const handleBack = () => {
     navigate(-1);
   };
+  
   const handleExploreNow = () => {
-    navigate("/lifebalance3");
+    navigate("/lifebalance4");
   };
+
   return (
     <>
       <div style={{ width: "100%", minHeight: "100vh", position: "relative" }}>
@@ -33,19 +37,30 @@ function LifeBalance3() {
           }}
         >
           {/* Content */}
-          <div className="main-sec">
-            <div className="Lb-div1">
+          <div className="main-sec1">
+            <div className="md-cta">
+            <button onClick={handleBack}>
+              <img src="assets/leftarr.png" alt="" id="leftarr" />
+            </button>
+          </div>
+            <div className="leftdiv">
               {/* Desktop CTA */}
               <div className="back-btn">
                 <button onClick={handleBack}>
                   <img src="assets/leftarr.png" width="20" height="20" />
                 </button>
               </div>
-              <div className="text-div">
+              <div className="text-div" id="where">
                 <h1>Where Are You From?</h1>
+               
+                
+                {/* Updated Country + ZIP Text Input */}
                 <div className="countryzip">
-                 
-                  <select id="countrySelect">
+                  <select 
+                    id="countrySelect" 
+                    ref={countryRef}
+                    defaultValue=""
+                  >
                     <option value="">Select your country</option>
                     <option value="India">India</option>
                     <option value="United States">United States</option>
@@ -58,11 +73,28 @@ function LifeBalance3() {
                     <option value="Brazil">Brazil</option>
                     <option value="China">China</option>
                   </select>
-                 
-                  <select id="zipSelect" >
-                    <option value="">Select country first </option>
-                  </select>
+                  
+                  {/* ZIP Text Input - Same styling as dropdown */}
+                  <input
+                    type="text"
+                    id="zipInput"
+                    placeholder="PIN / ZIP Code"
+                    maxLength={10}
+                    style={{
+                      width: '100%',
+                      padding: '16px 20px',
+                      fontSize: '16px',
+                      fontWeight: '500',
+                      color: 'white',
+                      background: 'transparent',
+                      border: '2px solid white',
+                      borderRadius: '12px',
+                      outline: 'none'
+                    }}
+                  />
                 </div>
+                
+
                 <div className="ctacontent">
                   <button onClick={handleExploreNow}>
                     Next
@@ -76,7 +108,9 @@ function LifeBalance3() {
                 </div>
               </div>
             </div>
-            <div className="rightdiv"></div>
+            <div className="rightdiv">
+              <img src="/assets/circle2.png" />
+            </div>
           </div>
         </div>
       </div>

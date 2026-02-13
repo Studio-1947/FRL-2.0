@@ -1,3 +1,13 @@
+.leftdiv{
+  width: 90%;
+  height: auto;
+  border: 1px solid transparent;
+  
+  flex: 1;
+}
+#where{
+  gap: 114px;
+}
 .countryzip {
   display: flex;
   flex-direction: column;
@@ -52,4 +62,137 @@
   cursor: not-allowed;
   background: rgba(248, 250, 252, 0.7);
   border-color: #94a3b8;
+}
+.rightdiv {
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.rightdiv img {
+  width: 80%;
+  height: auto;
+}
+.main-sec1 {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 clamp(20px, 6vw, 100px);
+    margin: 0 auto; /* Centers horizontally with equal left/right margins */
+ margin-top: 50px;
+  box-sizing: border-box;
+  flex: 1; /* Fills remaining space */
+  gap: clamp(15px, 4vw, 30px);
+}
+
+@media (max-width: 1222px){
+  .main-sec1 {
+   
+    flex-direction: column;
+    align-items: center;
+    padding: 0 clamp(20px, 6vw, 100px);
+     margin: 0 auto; /* Centers horizontally with equal left/right margins */
+      margin-top: 20px;
+     box-sizing: border-box;
+    
+    gap: clamp(15px, 5vw, 25px);
+  }
+
+  .back-btn {
+    display: none;
+  }
+
+  .rightdiv {
+    order: 2;
+    max-width: clamp(280px, 75vw, 450px);
+  }
+
+  .leftdiv {
+    order: 3;
+  }
+
+  .img-div {
+    padding: clamp(12px, 4vw, 35px) clamp(15px, 6vw, 60px);
+  }
+  .text-div{
+    margin-top: 0;
+  }
+ 
+}
+@media (min-width: 1222px) {
+  .md-cta {
+    display: none;
+  }
+  .main-sec1 {
+    padding-top: 100px;
+  }
+}
+@media (min-width: 1222px) {
+  .md-cta {
+    display: none;
+  }
+  .main-sec1 {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 840px) {
+  .img-div {
+    width: 50%;
+    padding: clamp(10px, 4vw, 25px) clamp(10px, 5vw, 40px);
+  }
+  .text-div{
+    margin-top: 50px;
+  }
+}
+@media (max-width: 840px) {
+  
+  .img-div {
+    width: 80%;
+    padding: clamp(10px, 4vw, 25px) clamp(10px, 5vw, 40px);
+  }
+  .animated-girl img {
+    width: 100px;
+    height: auto;
+  }
+  .md-cta button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #leftarr {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (max-width: 480px) {
+    
+  .text-div h1 {
+    font-size: clamp(1rem, 5vw, 1.5rem);
+  }
+
+  .text-div p {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+  }
+}
+@media (max-width: 414px){
+     .main-sec1{
+         padding-top: 100px;
+         
+         
+    }
+}
+@media (max-width: 375px){
+     .main-sec1{
+         padding-top: 40px;
+         
+         
+    }
 }
