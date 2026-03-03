@@ -9,6 +9,10 @@ import LifeBalance4 from "./components/LifeBalance4";
 import LifeBalance5 from "./components/LifeBalance5";
 import LifeBalance6 from "./components/LifeBalance6";
 import LifeBalance7 from "./components/LifeBalance7";
+import LifeBalance8 from "./components/LifeBalance8";
+import LifeBalance9 from "./components/LifeBalance9";
+import LifeBalance10 from "./components/LifeBalance10";
+import LifeBalance11 from "./components/LifeBalance11";
 
 
 function LayoutWithNav() {
@@ -42,6 +46,10 @@ function App() {
             <Route path="/lifebalance5" element={<LifeBalance5 />} />
             <Route path="/lifebalance6" element={<LifeBalance6 />} />
             <Route path="/lifebalance7" element={<LifeBalance7 />} />
+            <Route path="/lifebalance8" element={<LifeBalance8 />} />
+            <Route path="/lifebalance9" element={<LifeBalance9 />} />
+            <Route path="/lifebalance10" element={<LifeBalance10 />} />
+            <Route path="/lifebalance11" element={<LifeBalance11 />} />
             
           </Route>
         </Routes>

@@ -32,12 +32,12 @@ function LifeBalance8() {
             flexDirection: "column",
           }}
         >
-          <div className="main-sec1">
             <div className="md-cta">
               <button onClick={handleBack}>
                 <img src="assets/leftarr.png" alt="" id="leftarr" />
               </button>
             </div>
+          <div className="main-sec1">
 
             <div className="leftdiv">
               <div className="back-btn">
@@ -48,7 +48,7 @@ function LifeBalance8() {
 
               <div className="text-div">
                 <h1>
-                 How Satisfied Are You <br /> With Romance In your <br /> Life Right Now?
+                 How Satisfied Are You <br /> With Your Financial <br /> Situation Right Now?
                 </h1>
                 <p>Rate your level of satisfaction from 0.00 to 1.00</p>
 
@@ -73,7 +73,7 @@ function LifeBalance8() {
             </div>
 
             <div className="rightdiv">
-              <img src="/assets/circle6.png" />
+              <img src="/assets/circle7.png" />
             </div>
           </div>
         </div>

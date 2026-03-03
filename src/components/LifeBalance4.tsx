@@ -32,12 +32,12 @@ function LifeBalance4() {
             flexDirection: "column",
           }}
         >
-          <div className="main-sec1">
             <div className="md-cta">
               <button onClick={handleBack}>
                 <img src="assets/leftarr.png" alt="" id="leftarr" />
               </button>
             </div>
+          <div className="main-sec1">
 
             <div className="leftdiv">
               <div className="back-btn">

@@ -1,14 +1,14 @@
-import "./LifeBalance6.css";
+import "./LifeBalance11.css";
 import DarkVeil from "./DarkVeil";
 import { useNavigate } from "react-router-dom";
 import PointTracker from "./PointTracker";
 
-function LifeBalance6() {
+function LifeBalance11() {
   const navigate = useNavigate();
   
 
   const handleBack = () => navigate(-1);
-  const handleExploreNow = () => navigate("/lifebalance7");
+  const handleExploreNow = () => navigate("/lifebalance12");
 
   return (
     <>
@@ -48,7 +48,7 @@ function LifeBalance6() {
 
               <div className="text-div">
                 <h1>
-                 How Satisfied Are You In <br /> Relationship With <br /> Friends And Family Right Now?
+                 How Satisfied Are You <br /> With Your Spiritual  &<br />Emotional State?
                 </h1>
                 <p>Rate your level of satisfaction from 0.00 to 1.00</p>
 
@@ -73,7 +73,7 @@ function LifeBalance6() {
             </div>
 
             <div className="rightdiv">
-              <img src="/assets/circle5.png" />
+              <img src="/assets/circle10.png" />
             </div>
           </div>
         </div>
@@ -82,4 +82,4 @@ function LifeBalance6() {
   );
 }
 
-export default LifeBalance6;
+export default LifeBalance11;
