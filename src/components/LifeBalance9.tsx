@@ -1,9 +1,9 @@
-import "./Lifebalance9.css";
+import "./LifeBalance9.css";
 import DarkVeil from "./DarkVeil";
 import { useNavigate } from "react-router-dom";
 import PointTracker from "./PointTracker";
 
-function Lifebalance9() {
+function LifeBalance9() {
   const navigate = useNavigate();
   
 
@@ -82,4 +82,4 @@ function Lifebalance9() {
   );
 }
 
-export default Lifebalance9;
+export default LifeBalance9;
